@@ -7,5 +7,6 @@
                   :exclusions [org.codehaus.janino/janino
                                org.apache.hadoop/hadoop-core]]
                  [org.apache.thrift/libthrift "0.6.1"]]
+  :javac-options ["-target" "1.6" "-source" "1.6"]
   :profiles {:provided
              {:dependencies [[org.apache.hadoop/hadoop-core "0.20.2-dev"]]}})
